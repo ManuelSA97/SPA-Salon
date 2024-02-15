@@ -1,0 +1,38 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.navegacion{
+    background-color: v.$primario;
+    padding: .3rem;
+    margin: 2rem 0;
+
+    &__border{
+        border-block: 2px dashed white;;
+        padding: 1.7rem 0;
+    }
+
+    &__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include m.tablet { 
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+    }
+
+    &__link{
+        color: white;
+        font-size: 2.4rem;
+        margin-bottom: 1.2rem;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+        @include m.tablet { 
+            margin-bottom: 0;
+        }
+
+    }
+
+}
