@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
@@ -40,12 +41,21 @@
         </div>
     </div>
 
-    <section class="slider">
-        <ul class="slider__contenedor">
-            <li class="slider__slide">
-                <img src="/build/img/slide_03.avif" alt="imagen slide">
+    <section class="swiper contenedor">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <img class="slider__imagen" src="/build/img/slide_01.avif" alt="imagen slide">
+            </li>
+
+            <li class="swiper-slide">
+                <img class="slider__imagen" src="/build/img/slide_02.avif" alt="imagen slide">
+            </li>
+
+            <li class="swiper-slide">
+                <img class="slider__imagen" src="/build/img/slide_03.avif" alt="imagen slide">
             </li>
         </ul>
+        <div class="swiper-pagination"></div>
     </section>
 
     <section class="bienvenida seccion">
@@ -271,5 +281,7 @@
         <p class="footer__copyright">Carolina Spa & Salon. Todos los derechos reservados</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
