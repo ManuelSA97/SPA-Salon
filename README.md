@@ -1,0 +1,1 @@
+anding Page de un salon de SPA, aplicando el uso de librerías para agregar efectos al "hero" principal, Creada con HTML, SCSS y Javascript, utilizando BEM, GULP y la librería Swiper. Sitio: https://spasalon-jmsa.netlify.app/
